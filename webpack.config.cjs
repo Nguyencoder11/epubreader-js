@@ -9,7 +9,10 @@ const config = {
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		libraryTarget: "module"
+		filename: "js/[name].js",
+		sourceMapFilename: "js/[name].js.map",
+		publicPath: "/",
+		libraryTarget: "module",
 	},
 	externals: {
 		"epubjs": "epubjs"
